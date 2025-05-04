@@ -8,7 +8,7 @@ public class Bubble : MonoBehaviour
     public Text hideNum;
     public int hideNumValue;
 
-    private void Start()
+    private void Awake()
     {
         hideNum = GetComponentInChildren<Text>();
         hideNum.text = hideNumValue.ToString();
